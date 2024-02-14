@@ -13,7 +13,7 @@ Para iniciar el proyecto se deben seguir el siguiente procedimiento:
 4- con un terminal aparte instalaremos el frontend
   
   cd frontend
-  npmi
+  npm i
 
 #=============================== INICIAR EL BACKEND Y FRONTEND======================
 
