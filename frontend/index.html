@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="./src/loging/CSS/style.css">
+    <link rel="stylesheet" href="./src/loging/CSS/style.css" id="login-style">
 </head>
 <body>
     <div id="login-container">
@@ -31,10 +31,10 @@
 
     <div id="root" style="display: none;"></div>
 
-    
     <script type="module">
         const $loginForm = document.getElementById("login-form");
         const $root = document.getElementById("root");
+        const $loginStyle = document.getElementById("login-style");
 
         $loginForm.addEventListener("submit", (e) => {
             e.preventDefault();
@@ -53,6 +53,8 @@
                 // Ocultar el formulario de inicio de sesión y mostrar el contenido principal
                 $root.style.display = "block";
                 document.getElementById("login-container").style.display = "none";
+                // Bloquear el CSS después de iniciar sesión
+                $loginStyle.disabled = true;
             } else {
                 alert("Usuario o contraseña incorrectos");
             }
@@ -76,9 +78,7 @@
                 $password.type = e.target.checked ? "text" : "password";
             }
         });
-    
     </script>
     <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
-
