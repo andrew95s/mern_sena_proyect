@@ -4,6 +4,7 @@ const tramitesSchema = mongoose.Schema(
   {
     Municipio: { type: String, required: true, trim: true },
     Numero_Predial: { type: String, required: true },
+    Numero_Radicacion: { type: String, required: true },
     Tipo_Tramite: { type: String, required: true },
     Ejecutor: { type: String, required: true },
     Folio_Matricula: { type: String, required: true },

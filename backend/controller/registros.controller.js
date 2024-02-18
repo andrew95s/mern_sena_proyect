@@ -11,8 +11,8 @@ export const getRegistro = async (req, res) => {
 };
 
 export const createRegistro = async (req, res) => {
-  const { Municipio, Numero_Predial, Tipo_Tramite, Ejecutor, Folio_Matricula, Fecha_inicio_tarea_de_ejecucion, Fecha_fin_tarea_de_ejecucion } = req.body;
-  const registro = new tramiteModel({ Municipio, Numero_Predial, Tipo_Tramite, Ejecutor, Folio_Matricula, Fecha_inicio_tarea_de_ejecucion, Fecha_fin_tarea_de_ejecucion });
+  const { Municipio, Numero_Predial, Numero_Radicacion, Tipo_Tramite, Ejecutor, Folio_Matricula, Fecha_inicio_tarea_de_ejecucion, Fecha_fin_tarea_de_ejecucion } = req.body;
+  const registro = new tramiteModel({ Municipio, Numero_Predial, Numero_Radicacion, Tipo_Tramite, Ejecutor, Folio_Matricula, Fecha_inicio_tarea_de_ejecucion, Fecha_fin_tarea_de_ejecucion });
   await registro.save();
   return res.json(registro);
 };

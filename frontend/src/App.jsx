@@ -9,7 +9,6 @@ import DeleteTramite from './pages/DeleteTramite';
 const App = () => {
   return (
     <Routes>
-
       <Route path='/' element={<Home />} />
       <Route path='/tramites/create' element={<CreateTramite />} />
       <Route path='/tramites/details/:id' element={<ShowTramite />} />
