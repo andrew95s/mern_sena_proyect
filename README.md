@@ -1,38 +1,20 @@
-# mern_sena_proyect
-
+mern_sena_proyect
 Para iniciar el proyecto se deben seguir el siguiente procedimiento:
 
-1- descargar el repositorio mediante git o zip
-2-extraerlo en un IDE puede ser visual studio code
+1- descargar el repositorio mediante git o zip 2-extraerlo en un IDE puede ser visual studio code
 
-3-se debe instalar el backend y frontend, con un terminal ejecutar los siguientes comandos
+3-se debe iniciar el backend y frontend, Loging con un terminal ejecutar los siguientes comandos
 
-  cd backend
-  npm i
-  
-4- con un terminal aparte instalaremos el frontend
-  
-  cd frontend
-  npm i
+npm run start
 
-#=============================== INICIAR EL BACKEND Y FRONTEND======================
+o
 
-1- con un terminal iniciaremos primero el backend
-  cd backend
-  npm run start ( no cerrar el terminal)
+./inicio_servicios.sh
 
-2- con otro terminal aparte iniciaremos el frontend
+3 ingresamos en algun navegador http://localhost:3000/
 
-  cd frontend
-  npm run dev ( no cerrar el terminal)
+4- nos registramos y creamos una cuenta y posteriormente loguearse
 
-3 ingresamos en algun navegador http://localhost:5173/
-
- nos logueamos  usuario: admin
-                contraseña: admin2024.
-
-  5- Iniciar con los registros, se puede modificar la configuracion del mongo db en la siguiente ruta
-  backend> config.js
-    export const mongoDBURL = 'URL_MONGODB/DATABASE';
+5- Iniciar con los registros, se puede modificar la configuracion del mongo db en la siguiente ruta backend> config.js export const mongoDBURL = 'URL_MONGODB/DATABASE'; tambien en Loging Database usar la misma conexxion que la del backend
   
          
