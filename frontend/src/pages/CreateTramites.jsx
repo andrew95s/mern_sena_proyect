@@ -34,7 +34,7 @@ const CreateTramites = () => {
       .post('http://localhost:5555/tramites', data)
       .then(() => {
         setLoading(false);
-        enqueueSnackbar('Tramite Created successfully', { variant: 'success' });
+        enqueueSnackbar('Tramite Creado con Exito', { variant: 'success' });
         navigate('/');
       })
       .catch((error) => {
