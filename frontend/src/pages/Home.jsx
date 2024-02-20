@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get('http://localhost:5555/tramites')
+      .get('http://190.70.245.166:5555/tramites')
       .then((response) => {
         setTramites(response.data);
         setLoading(false);

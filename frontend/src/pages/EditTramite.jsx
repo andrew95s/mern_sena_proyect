@@ -52,7 +52,7 @@ const EditBook = () => {
     };
     setLoading(true);
     axios
-      .put(`http://localhost:5555/tramites/${id}`, data)
+      .put(`http://190.70.245.166:5555/tramites/${id}`, data)
       .then(() => {
         setLoading(false);
         enqueueSnackbar('Tramite Editado Correctamente', { variant: 'success' });

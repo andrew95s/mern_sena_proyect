@@ -12,7 +12,7 @@ const ShowTramite = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://localhost:5555/tramites/${id}`)
+      .get(`http://190.70.245.166:5555/tramites/${id}`)
       .then((response) => {
         setTramite(response.data);
         setLoading(false);

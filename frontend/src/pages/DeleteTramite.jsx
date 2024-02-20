@@ -14,7 +14,7 @@ const DeleteTramite = () => {
   const handleDeleteTramite = () => {
     setLoading(true);
     axios
-      .delete(`http://localhost:5555/tramites/${id}`)
+      .delete(`http://190.70.245.166:5555/tramites/${id}`)
       .then(() => {
         setLoading(false);
         enqueueSnackbar('El tramite Fue Borrado con Exito', { variant: 'success' });

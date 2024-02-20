@@ -31,7 +31,7 @@ const CreateTramites = () => {
     };
     setLoading(true);
     axios
-      .post('http://localhost:5555/tramites', data)
+      .post('http://190.70.245.166:5555/tramites', data)
       .then(() => {
         setLoading(false);
         enqueueSnackbar('Tramite Creado con Exito', { variant: 'success' });
